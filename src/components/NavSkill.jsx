@@ -41,7 +41,7 @@ const SkillsNavbar = () => {
       viewport={{ once: false }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto xl:w-6xl w-[450px]">
+      <div className="container mx-auto xl:w-6xl w-fit">
         <h2 className="text-xl font-bold mb-4">Skills</h2>
         <div className="flex space-x-8 items-center border-b border-gray-600 mb-6">
           {tabs.map((tab) => (
