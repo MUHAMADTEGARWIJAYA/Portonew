@@ -35,7 +35,7 @@ const SkillsNavbar = () => {
 
   return (
     <motion.div
-      className="bg-gray-900 text-white py-6 mx:mt-1 mt-32"
+      className="bg-red-900 min-h-screen text-white py-6 mx:mt-1 mt-32"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
