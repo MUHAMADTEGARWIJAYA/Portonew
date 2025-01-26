@@ -4,6 +4,7 @@ import StatsSection from "../components/Riwayat"
 import VideoCard from '../components/Project'
 import SkillsNavbar from "../components/NavSkill"
 import Footer from "../components/Footer"
+
 const LandingPage = () => {
 
 
@@ -17,6 +18,7 @@ const LandingPage = () => {
         <StatsSection />
         <SkillsNavbar/>
         <VideoCard/>
+    
         <Footer/>
         </section>
   </div>

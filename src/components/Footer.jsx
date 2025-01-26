@@ -8,8 +8,7 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">About Me</h3>
               <p className="text-sm">
-                We are a passionate team dedicated to delivering top-notch web
-                solutions to help your business grow and succeed.
+              Hi, Im a passionate developer with a focus on creating efficient and user-friendly applications. I love learning new technologies and solving real-world problems through code.
               </p>
             </div>
   
