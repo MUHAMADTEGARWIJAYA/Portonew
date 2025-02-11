@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/SkillData.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1739274708137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1739274708137,
+            "name": "Commit-0",
+            "content": "import { Briefcase, Layout, Globe,  Code, Settings, Mic } from \"lucide-react\";\r\nimport { FaReact,FaHtml5,FaCss3Alt,FaJs,FaVuejs, FaGitAlt, FaGithub } from \"react-icons/fa\";\r\nimport { SiExpress,SiMysql,SiMongodb  } from \"react-icons/si\";\r\nexport const tabs = [\r\n  { id: 1, name: \"Tech\", icon: <Briefcase /> },\r\n  { id: 2, name: \"Software\", icon: <Settings /> },\r\n  { id: 3, name: \"Language\", icon: <Mic /> },\r\n];\r\n\r\nexport const expertiseContent = [\r\n  { id: 1, name: \"HTML\", icon: <FaHtml5 /> },\r\n  { id: 2, name: \"CSS\", icon: <FaCss3Alt /> },\r\n  { id: 3, name: \"JavaScript\", icon: <FaJs /> },\r\n  { id: 4, name: \"ReactJs\", icon: <FaReact /> },\r\n  { id: 5, name: \"VueJs\", icon: <FaVuejs /> },\r\n  { id: 6, name: \"ExpressJs\", icon: <SiExpress /> },\r\n  { id: 7, name: \"Git\", icon: <FaGitAlt /> },\r\n  { id: 8, name: \"Github\", icon: <FaGithub /> },\r\n  { id: 9, name: \"Mysql\", icon: <SiMysql /> },\r\n  { id: 10, name: \"MongoDB\", icon: <SiMongodb /> },\r\n];\r\n\r\nexport const softwareContent = [\r\n  { id: 2, name: \"Figma\", icon: <Layout /> },\r\n  { id: 4, name: \"Visual Studio Code\", icon: <Code /> },\r\n\r\n];\r\n\r\nexport const languageContent = [\r\n  { id: 1, name: \"English\", icon: <Globe /> },\r\n  { id: 2, name: \"Indonesia\", icon: <Globe /> },\r\n  \r\n];\r\n"
+        }
+    ]
+}

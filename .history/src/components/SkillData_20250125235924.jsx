@@ -1,4 +1,4 @@
-import { Briefcase, Layout, Globe,  Code, Settings, Mic } from "lucide-react";
+import { Briefcase, Eye, Layout, Globe, Brush, Code, Settings, Mic } from "lucide-react";
 import { FaReact,FaHtml5,FaCss3Alt,FaJs,FaVuejs, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiExpress,SiMysql,SiMongodb  } from "react-icons/si";
 export const tabs = [
@@ -21,7 +21,9 @@ export const expertiseContent = [
 ];
 
 export const softwareContent = [
+  { id: 1, name: "Adobe Photoshop", icon: <Brush /> },
   { id: 2, name: "Figma", icon: <Layout /> },
+  { id: 3, name: "Sketch", icon: <Eye /> },
   { id: 4, name: "Visual Studio Code", icon: <Code /> },
 
 ];

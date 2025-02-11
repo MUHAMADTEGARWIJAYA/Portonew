@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Riwayat.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1739274662139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1739274662139,
+            "name": "Commit-0",
+            "content": "import { motion } from \"framer-motion\";\r\nimport { useEffect, useState } from \"react\";\r\n\r\nconst stats = [\r\n  { id: 1, value: \"1+\", label: \"Frontend Developer\" },\r\n  { id: 2, value: \"5+\", label: \"Projects Completed\" },\r\n  { id: 3, value: \"2+\", label: \"Certificate\" },\r\n];\r\n\r\nconst StatsSection = () => {\r\n  const [width, setWidth] = useState(\"77%\"); // Default width\r\n\r\n  useEffect(() => {\r\n    const handleResize = () => {\r\n      if (window.innerWidth >= 1280) {\r\n        // Breakpoint xl\r\n        setWidth(\"77%\"); // Atur width untuk xl\r\n      } else {\r\n        setWidth(\"89%\"); // Kembali ke default\r\n      }\r\n    };\r\n\r\n    // Panggil fungsi handleResize saat komponen dimount dan window di-resize\r\n    handleResize();\r\n    window.addEventListener(\"resize\", handleResize);\r\n\r\n    // Bersihkan event listener saat komponen di-unmount\r\n    return () => window.removeEventListener(\"resize\", handleResize);\r\n  }, []);\r\n\r\n  return (\r\n    <div className=\"bg-gray-900 text-white xl:py-8\">\r\n      {/* Garis pembatas */}\r\n      <div className=\"flex justify-center items-center mb-4\">\r\n        <motion.div\r\n          initial={{ opacity: 0, width: 0 }} // Animasi awal: garis muncul dari lebar 0\r\n          whileInView={{ opacity: 1, width }} // Animasi saat elemen terlihat\r\n          transition={{ delay: 1, duration: 0.8 }} // Durasi dan delay animasi\r\n          viewport={{ once: false }} // Animasi berjalan setiap kali elemen terlihat\r\n          className=\"border-t border-gray-300\" // Responsive width untuk xl\r\n        />\r\n      </div>\r\n\r\n      {/* Statistik */}\r\n      <div className=\"container mx-auto flex justify-around items-center\">\r\n        {stats.map((stat) => (\r\n          <motion.div\r\n            key={stat.id}\r\n            className=\"text-center\"\r\n            initial={{ opacity: 0, y: 20 }} // Animasi awal\r\n            whileInView={{ opacity: 1, y: 0 }} // Animasi saat elemen terlihat\r\n            transition={{ duration: 0.6, delay: stat.id * 0.2 }} // Durasi dan delay animasi\r\n            viewport={{ once: false }} // Animasi berjalan setiap kali elemen terlihat\r\n          >\r\n            <p className=\"xl:text-4xl text-2xl font-bold\">{stat.value}</p>\r\n            <p className=\"xl:text-lg xl:w-48 w-28 mt-2\">{stat.label}</p>\r\n          </motion.div>\r\n        ))}\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default StatsSection;"
+        }
+    ]
+}

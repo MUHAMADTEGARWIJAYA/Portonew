@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { id: 1, value: "1+", label: "Frontend Developer" },
+  { id: 1, value: "2+", label: "Years of Experience Fullstack" },
   { id: 2, value: "5+", label: "Projects Completed" },
-  { id: 3, value: "2+", label: "Certificate" },
+  { id: 3, value: "3+", label: "Certificate" },
 ];
 
 const StatsSection = () => {
