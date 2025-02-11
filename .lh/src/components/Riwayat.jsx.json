@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1739274662139,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1739274780434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { motion } from \"framer-motion\";\r\n import { useEffect, useState } from \"react\";\r\n \r\n const stats = [\r\n-  { id: 1, value: \"1+\", label: \"Frontend Developer\" },\r\n+  { id: 1, value: \"1+\", label: \"Years Frontend Developer\" },\r\n   { id: 2, value: \"5+\", label: \"Projects Completed\" },\r\n   { id: 3, value: \"2+\", label: \"Certificate\" },\r\n ];\r\n \r\n"
                 }
             ],
             "date": 1739274662139,
