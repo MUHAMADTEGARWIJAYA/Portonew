@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1739274662139,
@@ -12,6 +12,18 @@
                 {
                     "date": 1739274780434,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { motion } from \"framer-motion\";\r\n import { useEffect, useState } from \"react\";\r\n \r\n const stats = [\r\n-  { id: 1, value: \"1+\", label: \"Frontend Developer\" },\r\n+  { id: 1, value: \"1+\", label: \"Years Frontend Developer\" },\r\n   { id: 2, value: \"5+\", label: \"Projects Completed\" },\r\n   { id: 3, value: \"2+\", label: \"Certificate\" },\r\n ];\r\n \r\n"
+                },
+                {
+                    "date": 1743446057857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { motion } from \"framer-motion\";\r\n import { useEffect, useState } from \"react\";\r\n \r\n const stats = [\r\n-  { id: 1, value: \"1+\", label: \"Years Frontend Developer\" },\r\n+  { id: 1, value: \"2+\", label: \"Years Fullstack Developer\" },\r\n   { id: 2, value: \"5+\", label: \"Projects Completed\" },\r\n   { id: 3, value: \"2+\", label: \"Certificate\" },\r\n ];\r\n \r\n"
+                },
+                {
+                    "date": 1743492602824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,5 +60,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default StatsSection\n\\ No newline at end of file\n+export default StatsSection;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743492646025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     return () => window.removeEventListener(\"resize\", handleResize);\r\n   }, []);\r\n \r\n   return (\r\n-    <div className=\"bg-[#2C2C52] text-white xl:py-8\">\r\n+    <div className=\"bg-gradient-to-r from-slate-50 to-stone-100 text-white xl:py-8\">\r\n       {/* Garis pembatas */}\r\n       <div className=\"flex justify-center items-center mb-4\">\r\n         <motion.div\r\n           initial={{ opacity: 0, width: 0 }} // Animasi awal: garis muncul dari lebar 0\r\n"
                 }
             ],
             "date": 1739274662139,

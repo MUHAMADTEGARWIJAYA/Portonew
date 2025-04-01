@@ -5,13 +5,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State untuk toggle hamburger menu
 
   return (
-    <nav className="bg-gray-800 fixed w-full shadow-lg">
+    <nav className="bg-[#2C2C52] z-50 fixed w-full shadow-lg">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="text-white text-lg font-bold cursor-pointer">
-              Tegar <span className="text-green-300">WIjaya</span>
+              Tegar <span className="text-teal-400">WIjaya</span>
             </a>
           </div>
 
@@ -87,7 +87,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -20 }} // Animasi awal
           animate={{ opacity: 1, y: 0 }} // Animasi saat muncul
           transition={{ duration: 0.3 }} // Durasi animasi
-          className="md:hidden fixed w-full   bg-gray-700 cursor-pointer"
+          className="md:hidden fixed w-full   bg-[#2C2C52] cursor-pointer"
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
           <Link  className="text-gray-300 hover:text-teal-400 px-3 py-2"

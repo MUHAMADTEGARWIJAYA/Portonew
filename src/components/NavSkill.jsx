@@ -17,7 +17,7 @@ const SkillsNavbar = () => {
         {contentMap[activeTab]?.map((item) => (
           <motion.div
             key={item.id}
-            className="flex shadow-white shadow-sm items-center justify-center border border-gray-600 rounded-lg py-4 hover:bg-gray-800 transition"
+            className="flex shadow-white shadow-sm items-center justify-center border border-gray-600 rounded-lg py-4 hover:bg-white hover:text-black transition"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -35,7 +35,7 @@ const SkillsNavbar = () => {
 
   return (
     <motion.div
-      className="bg-gray-900 min-h-screen text-white py-6 mx:mt-1 mt-32"
+      className="bg-[#2C2C52] min-h-screen text-white py-6 mx:mt-1 mt-32"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}

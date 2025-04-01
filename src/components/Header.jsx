@@ -18,7 +18,7 @@ const Header = () => {
   return (
     // Container utama dengan animasi
     <motion.div 
-      className="xl:min-h-[567px] min-h-[600px] bg-gray-900 flex flex-col justify-center items-center xl:gap-16"
+      className="xl:min-h-[567px] min-h-[600px] bg-gradient-to-r from-slate-50 to-stone-100 flex flex-col justify-center items-center xl:gap-16"
     >
       {/* Konten teks dan gambar */}
       <div className="flex justify-center items-center xl:gap-16">
@@ -28,18 +28,18 @@ const Header = () => {
           whileInView={{ opacity: 1, x: 0 }} // Animasi saat elemen terlihat
           transition={{ delay: 0.5, duration: 0.8 }} // Durasi dan delay animasi
           viewport={{ once: false }} // Animasi berjalan setiap kali elemen terlihat
-          className="bg-gray-900 max-w-xl h-60"
+          className="bg-gradient-to-r from-slate-50 to-stone-100 max-w-xl h-60"
         >
-          <h1 className="py-4 px-4 text-white font-extrabold text-2xl xl:text-4xl">MUHAMAD TEGAR WIJAYA</h1>
-          <div className="py-4 px-4 bg-gray-900 xl:w-xl w-72">
-            <h2 className="text-white text-2xl font-semibold">Frontend Developer</h2>
-            <p className="text-white text-[13px] xl:text-[17px]">
+          <h1 className="py-4 px-4 bg-gradient-to-r from-stone-900 to-stone-900 bg-clip-text text-transparent font-extrabold text-2xl xl:text-4xl">MUHAMAD TEGAR WIJAYA</h1>
+          <div className="py-4 px-4 bg-gradient-to-r from-slate-50 to-stone-100 xl:w-xl w-72">
+            <h2 className="bg-gradient-to-r from-stone-900 to-stone-900 bg-clip-text text-transparent text-2xl font-semibold">Fullstack Developer</h2>
+            <p className="bg-gradient-to-r from-stone-900 to-stone-900 bg-clip-text text-transparent text-[13px] xl:text-[17px]">
             Hi, Im a passionate developer with a focus on creating efficient and user-friendly applications. I love learning new technologies and solving real-world problems through code.
             </p>
           </div>
           <button
                   onClick={handleDownload}
-                  className="cursor-pointer group relative flex gap-1.5 px-2 py-2 ml-3 bg-gray-900 shadow-white mt-2 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md"
+                  className="cursor-pointer group relative flex gap-1.5 px-2 py-2 ml-3 bg-gradient-to-r from-stone-900 to-stone-900 shadow-white mt-2 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const Header = () => {
           whileInView={{ opacity: 1, x: 0 }} // Animasi saat elemen terlihat
           transition={{ delay: 0.5, duration: 0.8 }} // Durasi dan delay animasi
           viewport={{ once: false }} // Animasi berjalan setiap kali elemen terlihat
-          className="bg-gray-900 h-60  xl:w-96 xl:h-96 flex justify-end items-end"
+          className=" h-60  xl:w-96 xl:h-96 flex justify-end items-end"
         >
           <img
             src={foto}

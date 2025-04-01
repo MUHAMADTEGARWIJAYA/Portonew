@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1739274708137,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743445409184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { Briefcase, Layout, Globe,  Code, Settings, Mic } from \"lucide-react\";\r\n import { FaReact,FaHtml5,FaCss3Alt,FaJs,FaVuejs, FaGitAlt, FaGithub } from \"react-icons/fa\";\r\n import { SiExpress,SiMysql,SiMongodb  } from \"react-icons/si\";\r\n+import { TbBrandNuxt } from \"react-icons/tb\";\r\n export const tabs = [\r\n   { id: 1, name: \"Tech\", icon: <Briefcase /> },\r\n   { id: 2, name: \"Software\", icon: <Settings /> },\r\n   { id: 3, name: \"Language\", icon: <Mic /> },\r\n@@ -17,8 +18,10 @@\n   { id: 7, name: \"Git\", icon: <FaGitAlt /> },\r\n   { id: 8, name: \"Github\", icon: <FaGithub /> },\r\n   { id: 9, name: \"Mysql\", icon: <SiMysql /> },\r\n   { id: 10, name: \"MongoDB\", icon: <SiMongodb /> },\r\n+  { id: 11, name: \"NuxtJs\", icon: <TbBrandNuxt /> },\r\n+\r\n ];\r\n \r\n export const softwareContent = [\r\n   { id: 2, name: \"Figma\", icon: <Layout /> },\r\n"
                 }
             ],
             "date": 1739274708137,

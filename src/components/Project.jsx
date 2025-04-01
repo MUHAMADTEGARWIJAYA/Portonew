@@ -1,38 +1,34 @@
-
 import PropTypes from "prop-types"; // Import PropTypes
-
-// Import GIF dari folder aset
 import Gift1 from "../assets/images/Gift1.gif";
-import Gift2 from "../assets/images/Gift2.gif"
-import Gift3 from "../assets/images/Gift3.gif"
-const GifCard = ({ title, description, gif }) => {
+import Gift2 from "../assets/images/Gift2.gif";
+import Gift3 from "../assets/images/Gift3.gif";
+import { FaReact } from "react-icons/fa6";
+import { SiExpress,SiMysql  } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+const GifCard = ({ title, description, gif, technologies }) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden bg-gray-800 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-      <div className="">
-        <img
-          className="w-full h-auto object-cover"
-          src={gif}
-          alt={title}
-        />
-      </div>
+    <div className="max-w-[400px] rounded-lg overflow-hidden bg-gray-900  shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
+      <img className="w-full h-auto object-cover" src={gif} alt={title} />
       <div className="px-4 py-6">
         <h2 className="font-bold text-lg text-white">{title}</h2>
         <p className="text-gray-400 text-sm mt-2">{description}</p>
         <div className="flex flex-wrap gap-2 mt-4">
-          <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">UI Design</span>
-          <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">Motion Design</span>
-          <span className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded">Web Design</span>
+          {technologies.map((tech, index) => (
+            <span key={index} className="text-xs flex justify-center items-center gap-3 bg-gray-700 text-gray-300 px-2 py-1 rounded">
+              {tech.name} {tech.icon}
+            </span>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-// Tambahkan deklarasi PropTypes untuk GifCard
 GifCard.propTypes = {
-  title: PropTypes.string.isRequired, // title harus berupa string
-  description: PropTypes.string.isRequired, // description harus berupa string
-  gif: PropTypes.string.isRequired, // gif harus berupa string (path file)
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  gif: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 const App = () => {
@@ -40,75 +36,67 @@ const App = () => {
     {
       id: 1,
       title: "Website Absensi Online",
-      description: "Website berbasis absensi online dengan menggunakan take foto sudah ada keterangan jam, tanggal, dan lokasi saat take foto, terdapat dua tampilan yaitu untuk user dan admin.",
-      gif: Gift1, // Ganti dengan file GIF internal
+      description: "Website berbasis absensi online dengan take foto dan info lokasi.",
+      gif: Gift1,
+      technologies: [
+        {name:"React", icon: <FaReact />},
+        {name:"Mysql", icon: <SiMysql/>},
+        {name:"ExpressJs", icon: <SiExpress/>},
+        {name:"Tailwindcss",icon: <RiTailwindCssFill/>},
+      
+      ],
     },
     {
       id: 2,
       title: "Website Organisasi",
-      description: "Website organisasi menampilkan landingpage organisasi dan juga include dengan admin dasboard, dengan ini client bisa mengubah data secara dinamis",
-      gif: Gift2, // Ganti dengan file GIF internal
+      description: "Website organisasi dengan landing page dan admin dashboard.",
+      gif: Gift2,
+      technologies:[
+        {name:"React", icon: <FaReact />},
+        {name:"Mysql", icon: <SiMysql/>},
+        {name:"ExpressJs", icon: <SiExpress/>},
+        {name:"Tailwindcss",icon: <RiTailwindCssFill/>},
+      
+      ],
     },
     {
       id: 3,
       title: "Kambing Fresh",
-      description: "Kambing Fresh adalah hasil dari massive project kampus merdeka Studi Independen, kambing fresh yaotu website E-commerce untuk para peternak kambing agar produknya bisa dipasarkan secara online ",
-      gif: Gift3, // Ganti dengan file GIF internal
+      description: "E-commerce untuk peternak kambing dari program Kampus Merdeka.",
+      gif: Gift3,
+      technologies: [
+        {name:"React", icon: <FaReact />},
+        {name:"Mysql", icon: <SiMysql/>},
+        {name:"ExpressJs", icon: <SiExpress/>},
+        {name:"Tailwindcss",icon: <RiTailwindCssFill/>},
+      ],
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 mt-28 justify-center items-center px-20 py-8">
-         <h1 className="text-4xl font-bold text-center text-white mb-8">Projects</h1>
-      <div className="container  justify-center flex mx-auto px-4">
-       
-        <div className="flex gap-12  xl:flex-row flex-col ">
-          {cards.map((card) => (
-            <GifCard
-              key={card.id}
-              title={card.title}
-              description={card.description}
-              gif={card.gif}
-            />
-          ))}
-    
-        </div>
+    <div className="min-h-screen bg-[#2C2C52]  pt-28 px-6">
+   <h1 className="text-4xl w-full font-bold text-center mb-10 h-20 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-700 animate-fade-in">
+Other Project
+</h1>
+      <div className="flex flex-col xl:flex-row gap-12 justify-center items-center mx-auto">
+        {cards.map((card) => (
+          <GifCard
+            key={card.id}
+            title={card.title}
+            description={card.description}
+            gif={card.gif}
+            technologies={card.technologies}
+          />
+        ))}
       </div>
-      
 
-  <div className="flex w-full justify-center items-center py-10">
-    <button
-      className=" inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-md cursor-pointer rounded-xl shadow-white transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-    >
-      <span
-        className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-      ></span>
-
-      <span className=" block px-6 py-3 rounded-xl bg-gray-900">
-        <div className=" flex items-center space-x-2">
-          <span className="transition-all duration-500 group-hover:translate-x-1" >Project Lainya?</span
-          >
-          <svg
-            className="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
-            data-slot="icon"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clipRule="evenodd"
-              d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-              fillRule="evenodd"
-            ></path>
-          </svg>
-        </div>
-      </span>
-    </button>
-  </div>
-</div>
-
-    
+      <div className="flex w-full justify-center items-center py-10">
+        <button className="relative inline-block px-6 py-3 font-semibold text-white  rounded-xl shadow-md transition-transform transform hover:scale-105 active:scale-95">
+          <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 opacity-0 transition-opacity duration-500 hover:opacity-100"></span>
+          <span className="relative block">You can find more on my github</span>
+        </button>
+      </div>
+    </div>
   );
 };
 

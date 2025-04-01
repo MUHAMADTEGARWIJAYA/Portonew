@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { id: 1, value: "1+", label: "Years Frontend Developer" },
+  { id: 1, value: "2+", label: "Years Fullstack Developer" },
   { id: 2, value: "5+", label: "Projects Completed" },
   { id: 3, value: "2+", label: "Certificate" },
 ];
@@ -29,7 +29,7 @@ const StatsSection = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 text-white xl:py-8">
+    <div className="bg-gradient-to-r from-slate-50 to-stone-100 text-black xl:py-8">
       {/* Garis pembatas */}
       <div className="flex justify-center items-center mb-4">
         <motion.div
@@ -37,7 +37,7 @@ const StatsSection = () => {
           whileInView={{ opacity: 1, width }} // Animasi saat elemen terlihat
           transition={{ delay: 1, duration: 0.8 }} // Durasi dan delay animasi
           viewport={{ once: false }} // Animasi berjalan setiap kali elemen terlihat
-          className="border-t border-gray-300" // Responsive width untuk xl
+          className="border-t border-black" // Responsive width untuk xl
         />
       </div>
 

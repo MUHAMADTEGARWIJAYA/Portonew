@@ -1,6 +1,7 @@
 import { Briefcase, Layout, Globe,  Code, Settings, Mic } from "lucide-react";
 import { FaReact,FaHtml5,FaCss3Alt,FaJs,FaVuejs, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiExpress,SiMysql,SiMongodb  } from "react-icons/si";
+import { TbBrandNuxt } from "react-icons/tb";
 export const tabs = [
   { id: 1, name: "Tech", icon: <Briefcase /> },
   { id: 2, name: "Software", icon: <Settings /> },
@@ -18,6 +19,8 @@ export const expertiseContent = [
   { id: 8, name: "Github", icon: <FaGithub /> },
   { id: 9, name: "Mysql", icon: <SiMysql /> },
   { id: 10, name: "MongoDB", icon: <SiMongodb /> },
+  { id: 11, name: "NuxtJs", icon: <TbBrandNuxt /> },
+
 ];
 
 export const softwareContent = [
