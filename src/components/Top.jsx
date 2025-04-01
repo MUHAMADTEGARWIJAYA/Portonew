@@ -36,7 +36,7 @@ export default function ProfileCard() {
       ))}
       
       <div className="relative text-center /*bg-[#2C2C52]*/ p-10 rounded-xl  text-white">
-        <div className="w-24 h-24 bg-yellow-400 rounded-full mx-auto mb-4">
+        <div className="w-24 h-24 rounded-full mx-auto mb-4">
           <img
             src="/image.png"
             alt="Profile"
